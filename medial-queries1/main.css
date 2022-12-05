@@ -1,3 +1,60 @@
-body {
-  background: blanchedalmond;
+body { 
+  background-color: rgb(102, 32, 116);
 }
+
+:root {
+  
+  --deep-emerald: #1e929f;
+  --night-forest: #2F3E46;
+}  
+
+* {
+  border: 1px solid rgb(210, 184, 54);
+}                  
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color:rgb(141, 125, 140)
+  }  
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}  
+
+.a {
+  background-color: rgb(11, 11, 67);
+  flex-grow: 2;
+}
+
+.b {
+  min-height: 60vh;
+  flex-grow: 5;
+}
+
+.c {
+  background-color: rgb(11, 11, 67);
+  flex-grow: 2;
+}
+
+/**footer, header {
+  background-color: var(--sage);
+  flex-grow: 1;
+}      
+**/
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .b {
+    max-width: 60%;
+  }
+  .a {
+    width: 100%;
+  }
+}                                  
+    
